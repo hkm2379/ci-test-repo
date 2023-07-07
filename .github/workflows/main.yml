@@ -25,7 +25,7 @@ jobs:
       
       # CI Test에서 사용할 MySQL 설정
       - name: Setup MySQL
-        uses: samin/mysql-actions@v1
+        uses: samin/mysql-action@v1
         with:
           character set server: 'utf8'
           mysql database: 'jpa_test'
