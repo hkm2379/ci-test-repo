@@ -20,7 +20,6 @@ jobs:
       # CI Test를 위한 applications.properties 생성
       - name: create applications for CI Test
         run: |
-          mkdir -p src/main/resources
           cd src/main/resources
           echo "${{ secrets.DEVELOPMENT_CI_CONFIG }}" >> application.properties
       
